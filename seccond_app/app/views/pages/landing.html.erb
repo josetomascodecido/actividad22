@@ -1,0 +1,22 @@
+<h1>Pagina loca</h1>
+<p>Aqui tienes tu informacion necesario</p>
+<table class="table table-success">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @student.each do |student| %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.age %></td>
+        <td><%= student.email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
